@@ -8,17 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
 
     <section class="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-xl">
@@ -60,6 +58,12 @@
                         </div>
                     </nav>
                 </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
                     <div class="header_content">
                         <div class="header_text">
@@ -86,7 +90,6 @@
                         <p style="margin-left: 10px;"></p>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -107,7 +110,7 @@
                                         <div class="overlay">
                                         </div>
                                         <!-- Slider -->
-                                        <div class="slider responsive">
+                                        <!-- <div class="slider responsive">
                                             <div>
                                                 <img src="./assets/img/T1.png" alt="" />
                                                 <div class=" silder-content d-flex justify-content-center">
@@ -141,25 +144,71 @@
                                                     <span>pour son œuvre Tsunami</span>
                                                 </div>
                                             </div>
+                                        </div> -->
+                                        <div class="owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="owl_img">
+                                                    <img src="./assets/img/T1.png" alt="" />
+                                                </div>
+                                                <div class="silder-content">
+                                                    <img src="./assets/img/n1.png" alt="">
+                                                    <span>Mélanie Léger </span>
+                                                    <span>pour son œuvre Tsunami</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="owl_img">
+                                                    <img src="./assets/img/T2.png" alt="" />
+                                                </div>
+                                                <div class="silder-content">
+                                                    <img src="./assets/img/n1.png" alt="">
+                                                    <span>Mélanie Léger </span>
+                                                    <span>pour son œuvre Tsunami</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="owl_img">
+                                                    <img src="./assets/img/T3.png" alt="" />
+                                                </div>
+                                                <div class="silder-content">
+                                                    <img src="./assets/img/n1.png" alt="">
+                                                    <span>Mélanie Léger </span>
+                                                    <span>pour son œuvre Tsunami</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="owl_img">
+                                                    <img src="./assets/img/T4.png" alt="" />
+                                                </div>
+                                                <div class="silder-content">
+                                                    <img src="./assets/img/n1.png" alt="">
+                                                    <span>Mélanie Léger </span>
+                                                    <span>pour son œuvre Tsunami</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                         </div>
                                         <hr class="hr">
-                                    </div>
-                                    <!-- control arrows -->
-                                    <div class="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    </div>
+                                        <!-- control arrows -->
 
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
 
     </section>
@@ -201,46 +250,46 @@
         </div>
         </div>
     </section>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Owl Carousel CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script>
-        $(".responsive").slick({
-            dots: true,
-            prevArrow: $(".prev"),
-            nextArrow: $(".next"),
-            infinite: false,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+        $(document).ready(function () {
+            var owl = $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
                     }
                 }
+            });
 
-            ]
+            // Previous button
+            $(".prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+
+            // Next button
+            $(".next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
         });
 
     </script>
