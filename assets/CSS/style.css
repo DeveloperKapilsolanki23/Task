@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -54,12 +62,14 @@ body {
 
 .navbar-brand img {
     height: 70px;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -81,7 +91,12 @@ body {
 }
 
 .header_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 50px;
 }
@@ -127,7 +142,11 @@ body {
 }
 
 .nxt_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 153px;
     position: relative;
@@ -142,8 +161,14 @@ body {
     border-radius: 100%;
     border: 1px solid #fff;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 20px;
 }
@@ -166,7 +191,10 @@ body {
 }
 
 .owl-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
@@ -176,16 +204,25 @@ body {
 
 
 .item .owl_img img {
+    width: 80% !important;
+    margin: 0 auto;
     aspect-ratio: 1;
     height: 350px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
 
 
 .footer_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -207,7 +244,12 @@ body {
 }
 
 .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -232,14 +274,24 @@ body {
 
 
 .silder-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .silder-content img {
     width: 123px !important;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -269,6 +321,7 @@ body {
 
 .footer_logo img {
     height: 65px;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -281,6 +334,7 @@ body {
 
 .footer_social img {
     width: 161px;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -289,18 +343,29 @@ body {
 }
 
 .footer_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: end;
 }
 
 .ft-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .ft-logo img {
     width: 120px;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -348,6 +413,7 @@ body {
 
     .ft-logo img {
         width: 79px;
+        -o-object-fit: contain;
         object-fit: contain;
     }
 
@@ -368,6 +434,7 @@ body {
 
 @media (max-width: 420px) {
     .footer_top {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
     }
@@ -379,6 +446,7 @@ body {
     }
 
     .footer_main {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -404,10 +472,16 @@ body {
 
     .footer_top {
 
+        -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
         justify-content: center;
     }
 
     .footer_main {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
